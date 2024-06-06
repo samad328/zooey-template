@@ -1,0 +1,43 @@
+$bp-sm: 600px;
+$bg-color: seagreen;
+
+
+
+h2 {
+  font-size: var(--h2-fs);
+  text-align: center;
+  color: var(--primary-clr);
+}
+
+.letter-wrap {
+  display: inline-block;
+  position: relative;
+}
+
+.letter-wrap * {
+  pointer-events: none;
+}
+
+.letter-wrap__word {
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.letter-wrap__char {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  
+  &-inner {
+    display: inline-block;
+    
+    &:after {
+      content: attr(data-letter);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      color: var(--secondary-clr);
+    }
+  }
+}

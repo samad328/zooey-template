@@ -1,0 +1,60 @@
+html {
+  font-size: calc(0.06250000000000022rem + 1.0416666666666665vw);
+}
+
+@media screen and (max-width:1920px) {
+  html {
+    font-size: calc(0.06249999999999967rem + 1.041666666666667vw);
+  }
+}
+
+@media screen and (max-width:1440px) {
+  html {
+    font-size: calc(0rem + 1.1111111111111112vw);
+  }
+}
+
+@media screen and (max-width:990px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:478px) {
+  html {
+    font-size: calc(0.03053977272727315rem + 3.9772727272727257vw);
+  }
+}
+
+@media screen and (max-width:390px) {
+  html {
+    font-size: calc(0.0028409090909091717rem + 4.090909090909091vw);
+  }
+}
+
+@media screen and (max-width:280px) {
+  html {
+    font-size: calc(0.49921594982078854rem + 1.2544802867383513vw);
+  }
+}
+
+
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(226, 223, 223);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.load-image {
+  width: 350px;
+  margin: 10% 40%;
+}
+
+.image{
+  opacity:0;
+  transform: translateY(100px);
+}
+

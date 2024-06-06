@@ -1,0 +1,75 @@
+
+.button {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-eye {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.all-cases-button_wrap:hover .button {
+  background-color: var(--swatch--black);
+  color: var(--swatch--white);
+}
+
+.all-cases-button_wrap:hover .btn-eye {
+  background-color: transparent;
+  color: var(--swatch--black);
+}
+
+.one-soc-link_wrap {
+  overflow: clip;
+}
+
+.one-soc-link_wrap {
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.showreel-play_wrap {
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.one-icon_wrap {
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.one-case_img-wrap {
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.one-cases_wrap {
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes scroll {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.reverse {
+  animation-direction: reverse;
+}
+
+/* Додайте стилі для екранів менше 767px */
+@media (max-width: 767px) {
+  .scroll {
+    animation: none;
+    /* Змініть тривалість анімації для менших екранів */
+  }
+}
